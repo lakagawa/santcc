@@ -104,7 +104,7 @@ router.post('/', async (req, res) => {
     })
   } catch (err) {
     return res.status(400).send({
-      error: 'Erro ao cadastrar'
+      error: 'Erro ao cadastrar ' + err
     })
   }
 })
